@@ -26,3 +26,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
+
+fruit_choice = streamlit.text_input("what fruit would you like the information about ?",'kiwi')
+streamlit.write("The user entered input is ", fruit_choice)
+
